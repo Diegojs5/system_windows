@@ -1,0 +1,8 @@
+----------------------------------------------------
+                      Ansible
+
+Host.: "{{ ansible_hostname }}"
+IP Address.: "{{ ansible_default_ipv4 }}" 
+Distribuição.: "{{ ansible_distribution }}"
+
+----------------------------------------------------
