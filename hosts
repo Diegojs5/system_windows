@@ -1,7 +1,5 @@
-#Ambiente de teste servidores
-
-[servidores]
-192.168.0.64
+[windows]
+192.168.0.22
 
 
 
