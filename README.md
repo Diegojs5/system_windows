@@ -21,9 +21,14 @@ Executar o script  ConfigureRemotingForAnsible.ps1, basicamente vai executar as 
 Link: https://github.com/ansible/ansible/blob/devel/examples/scripts/ConfigureRemotingForAnsible.ps1
 Executar o comando "winrm enumerate winrm/config/Listener" Transport = HTTP
     Port = 5985 e Transport = HTTPS Port = 5986
+    
+# Observações 
 
-#link
+Ajustar o HOSTS conforme autenticação. 
 
-Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7
-Link: https://docs.microsoft.com/en-us/windows/win32/winrm/installation-and-configuration-for-windows-remote-management
-Link: https://chocolatey.org/
+
+# Link
+
+link: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7
+link: https://docs.microsoft.com/en-us/windows/win32/winrm/installation-and-configuration-for-windows-remote-management
+link: https://chocolatey.org/
