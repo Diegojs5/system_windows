@@ -28,6 +28,5 @@
    with_items:
      - git
      - firefox
-     - putty
-        
+     - putty     
 ...
