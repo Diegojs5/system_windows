@@ -26,6 +26,7 @@ Executar o comando "winrm enumerate winrm/config/Listener" Transport = HTTP
 
 Ajustar o HOSTS conforme autenticação. 
 
+Caso queria alterar nivel de privilégio do winrm basta executar no Powershell como adminsitrador "winrm configSDDL default" e adicionar o grupo ou usuairo.
 
 # Link
 
