@@ -1,4 +1,4 @@
 ansible_ssh_port: 5986
 ansible_conection: winrm
-ansible_winrm_server_cert: ignore
+ansible_winrm_server_cert_validation: ignore
 
