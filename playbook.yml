@@ -1,6 +1,5 @@
 ---
-
- - name: playbook Ansible
+ - name: Default playbook - Starting Deploy
    hosts: all
    roles:
      - common      
