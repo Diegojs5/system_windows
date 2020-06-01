@@ -1,10 +1,33 @@
 ---
 #---Configurações gerais---#
 
- - name: Ensure Chocolatey installed from internal repo
-   win_chocolatey:
-    name: chocolatey
-    state: present
-    source: http://script/url/from/generic/tab/ChocolateyInstall.ps1
+ #- name: Ensure Chocolatey installed from internal repo
+ #  win_chocolatey:
+ #   name: chocolatey
+ #   state: present
+ #   source: http://script/url/from/generic/tab/ChocolateyInstall.ps1
+    
+ - name: CHOCOLATEY | Instalando Chocolatey
+   win_shell: Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')) 
+    
+ - name: CHOCOLATEY | Desabilitando enchanced exit codes
+   win_chocolatey_feature:
+   name: useEnhancedExitCodes
+   state: disabled   
+    
+ - name: COPY | Copiando arquivo de teste    
+   win_copy:
+     src: teste.txt
+     dest: C:\teste.txt
+     
 
+ - name: CHOCOLATEY | Instalando Softwares
+   win-chocolatey:
+     name: '{{ item }}'
+     state: latest
+   with_items:
+     - git
+     - firefox
+     - putty
+        
 ...
