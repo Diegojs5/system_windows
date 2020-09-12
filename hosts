@@ -5,5 +5,7 @@
 #Conta de Dominio
 #192.168.0.22 ansible_user=administrador@teste.com.br ansible_password="senha123"
 
+#alteração de ajuste#
+
 
 
